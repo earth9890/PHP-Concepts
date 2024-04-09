@@ -13,6 +13,9 @@
     <a href="http://localhost/helloworld/PHP-Concepts/Datatypes.php">Data types in PHP</a>
     <br />
     <a href="http://localhost/helloworld/PHP-Concepts/ControlStructure.php">Control Structure in PHP</a>
+    <br />
+    <a href="http://localhost/helloworld/PHP-Concepts/Functions.php">Functions in PHP</a>
+
 
 </body>
 
