@@ -5,66 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datatypes</title>
+    <title>Datatypes in PHP</title>
 </head>
 
 <body>
+    <h1>Datatypes in PHP</h1>
+
     <?php
-
-    echo "<h1>" . "Variables" . "</h1>";
+    const b = "<br/>";
+    const h = "<h1>";
+    const hh = "</h1>"; 
+    echo h . "Variables" . hh;
     $var1 = 10;
-    echo "var1 = " . $var1 . "<br/>";
+    echo "var1 = " . $var1 . b;
 
-    echo "<h1>" . "String" . "</h1>";
+    echo h . "String" . hh;
 
     $var2 = "Hello Neeraj ";
-    echo "\r\n var2 = " . $var2 . "<br/>";
+    echo "\r\n var2 = " . $var2 . b;
 
-    echo "My Name is {$var2}<br/>";
+    echo "My Name is {$var2} <br/>";
 
     $first = "First String ";
     $second = "Second String";
     $third = $first;
     $third .= $second;
     echo "Concanited string using .= {$third} <br/>";
-    echo "lowercase : " . strtolower($third) . "<br/>";
-    echo "UPPERCASE  : " . strtoupper($third) . "<br/>";
-    echo "First letter Uppercase : " . ucfirst($third) . "<br/>";
-    echo "Uppercase Words : " . ucwords($third) . "<br/>";
-    echo "length : " . strlen($first) . "<br/>";
-    echo "trim : " . $fourth = $first . trim($second) . "<br/>";
-    echo "find : " . strstr($third, "Second") . "<br/>";
-    echo "Replace by String : " . str_replace("Second", "Last", $third) . "<br/>";
-    echo "repeat : " . $repeat = str_repeat($third, 2) . "<br/>";
-    echo "substring : " . $substr = substr($third, 4, 7) . "<br/>";
-    echo "find position : " . $fpos = strpos($third, "Second") . "<br/>";
-    echo "find char : " . $fchar = strpos($third, 'F') . "<br/>";
+    echo "lowercase : " . strtolower($third) . b;
+    echo "UPPERCASE  : " . strtoupper($third) . b;
+    echo "First letter Uppercase : " . ucfirst($third) . b;
+    echo "Uppercase Words : " . ucwords($third) . b;
+    echo "length : " . strlen($first) . b;
+    echo "trim : " . $fourth = $first . trim($second) . b;
+    echo "find : " . strstr($third, "Second") . b;
+    echo "Replace by String : " . str_replace("Second", "Last", $third) . b;
+    echo "repeat : " . $repeat = str_repeat($third, 2) . b;
+    echo "substring : " . $substr = substr($third, 4, 7) . b;
+    echo "find position : " . $fpos = strpos($third, "Second") . b;
+    echo "find char : " . $fchar = strpos($third, 'F') . b;
 
 
     echo "<br/> <h1>" . "Numbers : Integers" . "</h1> <br/>";
 
     $one = 10;
     $two = 20;
-    echo "$one + $two = " . $one + $two . "<br/>";
-    echo "$one - $two = " . $one - $two . "<br/>";
-    echo "$one * $two = " . $one * $two . "<br/>";
-    echo "$one / $two = " . $one / $two . "<br/>";
+    echo "$one + $two = " . $one + $two . b;
+    echo "$one - $two = " . $one - $two . b;
+    echo "$one * $two = " . $one * $two . b;
+    echo "$one / $two = " . $one / $two . b;
     $one++;
-    echo " Increment =  " . $one . "<br/>";
+    echo " Increment =  " . $one . b;
     $one--;
-    echo "Decrement = " . $one . "<br/>";
+    echo "Decrement = " . $one . b;
 
     echo "<br/> <h1>" . "Numbers : Floating" . "</h1> <br/>";
 
-    echo "Floating Point : " . $float = 3.14 . "<br/>";
-    echo "Round : " . round(3.14) . "<br/>";
-    echo "Ciel : " . ceil(3.14) . "<br/>";
-    echo "Floor : " . floor(3.14) . "<br/>";
-    echo "Abs : " . abs(100 - 200) . "<br/>";
-    echo "sqrt : " . sqrt(16) . "<br/>";
-    echo "rand : " . rand() . "<br/>";
-    echo "rand 1 to 10: " . rand(1, 10) . "<br/>";
-    echo "power: " . pow(2, 3) . "<br/>";
+    echo "Floating Point : " . $float = 3.14 . b;
+    echo "Round : " . round(3.14) . b;
+    echo "Ciel : " . ceil(3.14) . b;
+    echo "Floor : " . floor(3.14) . b;
+    echo "Abs : " . abs(100 - 200) . b;
+    echo "sqrt : " . sqrt(16) . b;
+    echo "rand : " . rand() . b;
+    echo "rand 1 to 10: " . rand(1, 10) . b;
+    echo "power: " . pow(2, 3) . b;
 
     echo "<br/> <h1>" . "Arrays" . "</h1> <br/>";
 
@@ -73,19 +77,19 @@
     $mixedArray = array("apple", "banana", "color" => "red", "shape" => "round");
 
 
-    echo '$numericArray = array(10, 20, 30, 40);' . "<br/>";
-    echo '$ numericArray2 =  [10, 20, 30, 40];' . "<br/>";
+    echo '$numericArray = array(10, 20, 30, 40);' . b;
+    echo '$ numericArray2 =  [10, 20, 30, 40];' . b;
 
-    echo '$associativeArray = array("name" => "John", "age" => 30, "city" => "New York");' . "<br/>";
-    echo '$associativeArray = ["name" => "John", "age" => 30, "city" => "New York"];' . "<br/>";
+    echo '$associativeArray = array("name" => "John", "age" => 30, "city" => "New York");' . b;
+    echo '$associativeArray = ["name" => "John", "age" => 30, "city" => "New York"];' . b;
 
-    echo '$mixedArray = array("apple", "banana", "color" => "red", "shape" => "round");' . "<br/>";
-    echo '$mixedArray = ["apple", "banana", "color" => "red", "shape" => "round"];' . "<br/>";
+    echo '$mixedArray = array("apple", "banana", "color" => "red", "shape" => "round");' . b;
+    echo '$mixedArray = ["apple", "banana", "color" => "red", "shape" => "round"];' . b;
 
 
-    echo '$numericArray[0] = ' . $numericArray[0] . "<br/>";
-    echo '$associativeArray["name"] = ' . $associativeArray["name"] . "<br/>";
-    echo '$mixedArray[2] = ' . $mixedArray[2] . "<br/>";
+    echo '$numericArray[0] = ' . $numericArray[0] . b;
+    echo '$associativeArray["name"] = ' . $associativeArray["name"] . b;
+    echo '$mixedArray[2] = ' . $mixedArray[2] . b;
 
     $numericArray[] = 50;
     $associativeArray["gender"] = "Male";
@@ -94,65 +98,65 @@
         echo $value . " ";
     }
 
-    echo "<br/>";
+    echo b;
 
     foreach ($associativeArray as $key => $value) {
-        echo $key . ": " . $value . "<br/>";
+        echo $key . ": " . $value . b;
     }
-    echo "<br/>";
+    echo b;
 
 
     foreach ($mixedArray as $element) {
         echo $element . " ";
     }
-    echo "<br/>";
+    echo b;
 
-    echo 'Count $numericArray = ' . count($numericArray) . "<br/>";
-    echo 'Min $numericArray = ' . min($numericArray) . "<br/>";
-    echo 'Min $numericArray = ' . max($numericArray) . "<br/>";
+    echo 'Count $numericArray = ' . count($numericArray) . b;
+    echo 'Min $numericArray = ' . min($numericArray) . b;
+    echo 'Min $numericArray = ' . max($numericArray) . b;
     sort($numericArray);
-    echo 'Sort $numericArray = ' . "<br/>";
+    echo 'Sort $numericArray = ' . b;
     foreach ($numericArray as $value) {
         echo $value . " ";
     }
-    echo "<br/>";
+    echo b;
 
     rsort($numericArray);
-    echo 'Reverse Sort $numericArray = ' . "<br/>";
+    echo 'Reverse Sort $numericArray = ' . b;
     foreach ($numericArray as $value) {
         echo $value . " ";
     }
 
-    echo "<br/>";
+    echo b;
     $nums = implode(", ", $numericArray);
-    echo 'Implode $numericArray = ' . "<br/>";
+    echo 'Implode $numericArray = ' . b;
 
     foreach ($numericArray as $value) {
         echo $value . " ";
     }
 
-    echo "<br/>";
+    echo b;
     $numsArray = explode(", ", $nums);
 
-    echo 'Explode $numericArray = ' . "<br/>";
+    echo 'Explode $numericArray = ' . b;
     foreach ($numericArray as $value) {
         echo $value . " ";
     }
-    echo "<br/>";
+    echo b;
 
 
     echo "<br/> <h1>" . "Booleans" . "</h1> <br/>";
 
     $age = 25;
     $isAdult = ($age >= 18);
-    echo 'Is age > 18 =' . "$isAdult" . "<br/>";
+    echo 'Is age > 18 =' . "$isAdult" . b;
     $name = "NM";
 
-    echo 'Is set boolean =' . isset($name) . "<br/>";
-    echo 'Is  empty =' . empty($name) . "<br/>";
+    echo 'Is set boolean =' . isset($name) . b;
+    echo 'Is  empty =' . empty($name) . b;
     unset($name);
-    echo 'Is set boolean =' . isset($name) . "<br/>";
-    echo 'Is  empty =' . empty($name) . "<br/>";
+    echo 'Is set boolean =' . isset($name) . b;
+    echo 'Is  empty =' . empty($name) . b;
 
 
 
@@ -160,16 +164,16 @@
 
     $one = "10";
     $two = 20;
-    echo ' "10" + 20 = ' . $one + $two . "<br/>";
+    echo ' "10" + 20 = ' . $one + $two . b;
     $three = (int) $one;
-    echo '$three =' . "$three = " . gettype($three) . "<br/>";
+    echo '$three =' . "$three = " . gettype($three) . b;
 
-    echo 'Get Type =' . gettype($one) . "<br/>";
+    echo 'Get Type =' . gettype($one) . b;
     settype($one, "integer");
-    echo 'Get Type =' . gettype($one) . "<br/>";
-    echo 'Is integer =' . is_integer($one) . "<br/>";
-    echo 'Is array =' . is_array($numericArray) . "<br/>";
-    echo 'Is array =' . is_array($one) . "<br/>";
+    echo 'Get Type =' . gettype($one) . b;
+    echo 'Is integer =' . is_integer($one) . b;
+    echo 'Is array =' . is_array($numericArray) . b;
+    echo 'Is array =' . is_array($one) . b;
 
     // declare(strict_types=1);
     
@@ -178,13 +182,13 @@
     define("PI", 3.14);
     define("GREETING", "Hello, Neeraj!");
 
-    echo 'Constant PI = ' . PI . "<br/>";
-    echo 'Constant Greeting = ' . GREETING . "<br/>";
+    echo 'Constant PI = ' . PI . b;
+    echo 'Constant Greeting = ' . GREETING . b;
 
     const PI1 = 3.14;
     const GREETING1 = "Hello, world!";
-    echo 'Constant PI1 = ' . PI1 . "<br/>";
-    echo 'Constant Greeting1 = ' . GREETING1 . "<br/>";
+    echo 'Constant PI1 = ' . PI1 . b;
+    echo 'Constant Greeting1 = ' . GREETING1 . b;
 
 
 
