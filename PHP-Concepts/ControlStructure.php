@@ -140,3 +140,41 @@
 </body>
 
 </html>
+
+
+
+<!-- <?php
+// Example 2D array
+$twoDArray = array(
+    array("John", "Doe", 25),
+    array("Jane", "Smith", 30),
+    array("Mike", "Johnson", 40)
+);
+
+// Traversing through the 2D array
+foreach ($twoDArray as $row) {
+    foreach ($row as $value) {
+        echo $value . " ";
+    }
+    echo "<br>";
+}
+
+// Example JSON string representing an array of arrays (like objects)
+$jsonString = '[
+    {"name": "John", "age": 25},
+    {"name": "Jane", "age": 30},
+    {"name": "Mike", "age": 40}
+]';
+
+// Decoding JSON string into a PHP array
+$arrayFromJson = json_decode($jsonString, true);
+
+// Traversing through the array of arrays (like objects)
+foreach ($arrayFromJson as $object) {
+    foreach ($object as $key => $value) {
+        echo "$key: $value ";
+    }
+    echo "<br>";
+}
+?>
+ -->
